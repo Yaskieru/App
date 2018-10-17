@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App" x:Class="App.MainPage">
+    <StackLayout VerticalOptions="Center" 
+                 Margin="20,0,20,200">
+        <Image x:Name="iconImage" Aspect="AspectFit" HorizontalOptions="FillAndExpand" Margin="0,0,0,20"/>
+        <!-- Place new controls here -->
+        <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" FontSize="Default" HeightRequest="40"/>
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="true" FontSize="Default" HeightRequest="40"/>
+        <Button x:Name="LoginButton"
+                Text="Log in"
+                Clicked="LoginButton_Clicked"
+                BackgroundColor="{StaticResource blueColor}"
+                TextColor="White"/>
+    </StackLayout>
+</ContentPage>
